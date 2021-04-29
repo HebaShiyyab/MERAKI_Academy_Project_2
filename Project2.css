@@ -1,7 +1,6 @@
-*{
-    background-image: url(./pexels-pixabay-2150.jpg);
-    color: aliceblue;
-    background-size: cover;
-    background-repeat:no-repeat;
-    /* background-color: black; */
+.photo img{
+    max-height: 17vw;
+    min-height: 17vw;
+    max-width:17vw;
+    min-width: 17vw;
 }
