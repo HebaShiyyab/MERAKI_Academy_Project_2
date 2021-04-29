@@ -1,6 +1,22 @@
+*{
+    text-align: center;
+}
+
+
+
+
 .photo img{
     max-height: 17vw;
     min-height: 17vw;
     max-width:17vw;
     min-width: 17vw;
+    margin: 4px;
+    border: 1px;
+    transition: 1s;
+}
+
+.photo img :hover{
+    filter:blur(4);
+    transform:scale(1.1) ;
+
 }
