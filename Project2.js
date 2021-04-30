@@ -1,4 +1,4 @@
-// <div class="photo"> 
+// <div class="photo">
 // <div><a href="sun_large.jpg"><img src="sunSmall.jpg" alt=""></a><div class="Bottomleft"><h3>Sun</h3></div></div>
 // <div><a href="UranusLarge.jpg"> <img src="uranusSmall.jpg" alt="Uranus"></a><div class="Bottomleft"><h3>Uranus</h3></div></div>
 // <div><a href="fullMoonLarg.jpg"><img src="fullMoonSmall.jpg" alt=""></a><div class="Bottomleft"><h3>Full Moon</h3></div></div>
@@ -14,26 +14,72 @@
 // <div><a href="auroraLarg.jpg"><img src="auroraSmall.jpg" alt=""></a><div class="Bottomleft"><h3>Aurora</h3></div></div>
 // <div><a href="astronauteLarg.jpg"><img src="astronauteSmalljpg.jpg" alt=""></a><div class="Bottomleft"><h3>Astronaut</h3></div></div> -->
 
-$( document ).ready(function() {
-    const galleryArray= ['sunSmall','uranusSmall','fullMoonSmall','galaxsiSmall','mercurySmall','Meteor showeSmall','nebulaSmall','PleiadesSmall','solar eclipseSmall','n3','butterflySmall','saturnSmall','auroraSmall','astronauteSmalljpg']
-    const descriptionArray = ['Sun','Uranus','Full Moon','Galaxy','Mercury','Meteor Shower','Nebula','Pleiades','Solar Eclipse','Eye Cat Nebula','Butter fly Nebula','Saturn','Aurora','Astronaut']
-    const galleryArrayLink = ['sun_large','UranusLarge','fullMoonLarg','galaxsiLarge', 'mercuryLarge','Meteor showeLarg','nebulaLarg','PleiadesLarge','solar eclipseLarg','n3large','butterflyLarg','saturnLarg','auroraLarg','astronauteLarg']
-    const gallery = $('.gallery')
-    for (let i = 0 ; i< galleryArray.length ;i++ ){
-    gallery.append(`<div class="gallery-item"><a href="./`+galleryArrayLink[i] +`.jpg">
-    <img src="./`+galleryArray[i]+`.jpg" alt="" > </a>
-    <div class="image-description">`+descriptionArray[i] +`</div>
+$(document).ready(function () {
+  const galleryArray = [
+    "sunSmall",
+    "uranusSmall",
+    "fullMoonSmall",
+    "galaxsiSmall",
+    "mercurySmall",
+    "Meteor showeSmall",
+    "nebulaSmall",
+    "PleiadesSmall",
+    "solar eclipseSmall",
+    "n3",
+    "butterflySmall",
+    "saturnSmall",
+    "auroraSmall",
+    "astronauteSmalljpg",
+  ];
+  const descriptionArray = [
+    "Sun",
+    "Uranus",
+    "Full Moon",
+    "Galaxy",
+    "Mercury",
+    "Meteor Shower",
+    "Nebula",
+    "Pleiades",
+    "Solar Eclipse",
+    "Eye Cat Nebula",
+    "Butter fly Nebula",
+    "Saturn",
+    "Aurora",
+    "Astronaut",
+  ];
+  const galleryArrayLink = [
+    "sun_large",
+    "UranusLarge",
+    "fullMoonLarg",
+    "galaxsiLarge",
+    "mercuryLarge",
+    "Meteor showeLarg",
+    "nebulaLarg",
+    "PleiadesLarge",
+    "solar eclipseLarg",
+    "n3large",
+    "butterflyLarg",
+    "saturnLarg",
+    "auroraLarg",
+    "astronauteLarg",
+  ];
+  const gallery = $(".gallery");
+  for (let i = 0; i < galleryArray.length; i++) {
+    gallery.append(
+      `<div class="gallery-item"><a href="./` +
+        galleryArrayLink[i] +
+        `.jpg" target='blank'>
+    <img src="./` +
+        galleryArray[i] +
+        `.jpg" alt="" > </a>
+    <div class="image-description">` +
+        descriptionArray[i] +
+        `</div>
 
-    </div>`)}
-//   $('#dynamic').on('click',function(e)){
-//       $('this').
-//   }
-
+    </div>`
+    );
+  }
+  //   $('#dynamic').on('click',function(e)){
+  //       $('this').
+  //   }
 });
-
-
-
-
-
-
-
