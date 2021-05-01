@@ -32,20 +32,20 @@ $(document).ready(function () {
     "astronauteSmalljpg",
   ];
   const descriptionArray = [
-    "Sun",
-    "Uranus",
-    "Full Moon",
-    "Galaxy",
-    "Mercury",
-    "Meteor Shower",
-    "Nebula",
-    "Pleiades",
-    "Solar Eclipse",
+    "The sun is the great star in the solar system",
+    "Uranus is a planet from the solar system",
+    "The full moon is one of the phases of the moon that comes in the middle of the lunar month",
+    "Milky Way",
+    "Mercury  is a planet from the solar system",
+    "Meteor Shower are parts of meteors or small asteroids",
+    "Nebula is Cosmic dust and the remains of a dead star",
+    "Pleiades an open stellar cluster",
+    "Operation Solar Eclipse",
     "Eye Cat Nebula",
     "Butter fly Nebula",
-    "Saturn",
-    "Aurora",
-    "Astronaut",
+    "Saturn is a planet from the solar system",
+    "Aurora Great interference of ions through the magnetic field",
+    "Astronaut To give love always    ",
   ];
   const galleryArrayLink = [
     "sun_large",
@@ -79,7 +79,18 @@ $(document).ready(function () {
     </div>`
     );
   }
-  //   $('#dynamic').on('click',function(e)){
-  //       $('this').
-  //   }
+  $("gallery-item ").animate({
+      width:'50vw',
+      height:'50vh'
+  })
+//   $("gallery-item ").hover(function () {
+//     $("gallery-item").css("width", "50vw");
+//   }
+  
+//   function(){
+//     $('gallery-item').css("width","auto")
+
+
+//   });
+  
 });
