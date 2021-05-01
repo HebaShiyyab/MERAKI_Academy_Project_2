@@ -8,8 +8,7 @@
 .gallery-item:hover {
   transform: scale(1.1);
   transition: 1s;
-  width: 70vw;
-  height: auto;
+
 }
 
 .gallery-item {
@@ -33,12 +32,7 @@
   justify-content: center;
 }
 
-.image-description:hover {
-  width: 50vw;
-  height: auto;
-  opacity: 0;
 
-}
 .gallery-item a{
     background: #0c0c0c;
     height: 50vh;

@@ -79,18 +79,15 @@ $(document).ready(function () {
     </div>`
     );
   }
-  $("gallery-item ").animate({
-      width:'50vw',
-      height:'50vh'
-  })
-//   $("gallery-item ").hover(function () {
-//     $("gallery-item").css("width", "50vw");
-//   }
-  
-//   function(){
-//     $('gallery-item').css("width","auto")
-
-
-//   });
-  
+  $(".gallery-item ").animate(
+    {
+      width: "50vw",
+      height: "50vh",
+      borderRadius: "20px",
+    },
+    500,
+    function () {
+      $([descriptionArray[i]]).fadeIn();
+    }
+  );
 });
