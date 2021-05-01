@@ -79,7 +79,9 @@ $(document).ready(function () {
     </div>`
     );
   }
-  $(".gallery-item ").animate(
+  $('.gallery-item').click(function(){
+
+  $('.gallery-item ').animate(
     {
       width: "50vw",
       height: "50vh",
@@ -89,5 +91,5 @@ $(document).ready(function () {
     function () {
       $([descriptionArray[i]]).fadeIn();
     }
-  );
+  ); })
 });
