@@ -66,12 +66,10 @@ $(document).ready(function () {
   const gallery = $(".gallery");
   for (let i = 0; i < galleryArray.length; i++) {
     gallery.append(
-      `<div class="gallery-item"><a href="./` +
-        galleryArrayLink[i] +
-        `.jpg" target='blank'>
+      `<div class="gallery-item">
     <img src="./` +
         galleryArray[i] +
-        `.jpg" alt="" > </a>
+        `.jpg" alt="" > 
     <div class="image-description">` +
         descriptionArray[i] +
         `</div>
@@ -79,17 +77,12 @@ $(document).ready(function () {
     </div>`
     );
   }
-  $('.gallery-item').click(function(){
+  $(".gallery-item").click(function () {
+    $(this).toggleClass('full-screen');
 
-  $('.gallery-item ').animate(
-    {
-      width: "50vw",
-      height: "50vh",
-      borderRadius: "20px",
-    },
-    500,
-    function () {
-      $([descriptionArray[i]]).fadeIn();
-    }
-  ); })
+  });
+ $('#dynamic').click(function(){
+     $(this).append()
+
+  })
 });
