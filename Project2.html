@@ -6,11 +6,18 @@
     <script
       src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="./Project2.js"></script>
   </head>
   <body>
+    <h1 style="text-align: center">Astronomy Gallery</h1>
     <div class="gallery"></div>
-    <button id="dynamic">Add photo </button>
+    <div class="label1" >
+      <label for="dynamic"> Add Image </label> 
+      <input  id="dynamic" type="file"  accept="image/jpg,image/png" />
+      <input id="sub" type="submit" />
+    </div>
+    <div><button button id="del">Delete</button></div>
   </body>
 </html>
