@@ -12,14 +12,15 @@
   cursor: pointer;
   border-radius: 0.2rem;
   border: 2px solid #c3a920;
-  margin: -2rem;
+  /* margin: -2rem; */
 }
 
 .gallery-item {
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
   position: relative;
   height: 300px;
   width: 300px;
+  margin-bottom: 3rem;
 }
 .image-description {
   position: absolute;
@@ -33,7 +34,8 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 2rem;
   border: 0.35rem outset black;
   outline: 0.2rem solid #7f7f7f;
@@ -86,12 +88,16 @@
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-#button {
+.but1 {
   line-height: 2;
   padding: 13px 13px;
   cursor: pointer;
   border-radius: 50%;
 }
-#button :hover{
-background-color:red;
+.but1:hover {
+  background-image: url(./love.png);
+}
+@media (height > 500px) {
+  height: 50vh;
+  width: 50vw;
 }

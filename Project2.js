@@ -12,8 +12,7 @@ $(document).ready(function () {
     "n3large",
     "butterflyLarg",
     "saturnLarg",
-    "auroraLarg"
- 
+    "auroraLarg",
   ];
   const descriptionArray = [
     "The sun is the great star in the solar system",
@@ -29,7 +28,6 @@ $(document).ready(function () {
     "Butter fly Nebula",
     "Saturn is a planet from the solar system",
     "Aurora Great interference of ions through the magnetic field",
-   
   ];
 
   const gallery = $(".gallery");
@@ -41,17 +39,15 @@ $(document).ready(function () {
         `.jpg" alt="" > 
     <div class="image-description">` +
         descriptionArray[i] +
-        `</div><div><button style='background-image: url("https://toppng.com/uploads/preview/facebook-love-icon-11549682031zkpiupatd5.png")' id="button"></button> </div>
+        `</div><div><button class="but1"></button> </div>
 
     </div>`
     );
-    $('#button').click(function(){
-        console.log("heba")
-      $('#button').css("hover","red")
-    })
+    $(".button").click(function () {
+      console.log("heba");
+      $("#button").css("hover", "red");
+    });
   }
-
-
 
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
