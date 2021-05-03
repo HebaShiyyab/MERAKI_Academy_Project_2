@@ -47,7 +47,7 @@ $(document).ready(function () {
     );
   }
   $(".gallery-item").addClass("icon-bar")
-  $(".icon-bar").append(`<i class="bi bi-emoji-smile"></i>`,);
+  $(".icon-bar").append(`<i class="bi bi-emoji-heart-eyes"></i>`,`<i class="bi bi-emoji-angry">`);
 
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
