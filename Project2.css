@@ -1,8 +1,8 @@
-#h1{
-    font-family: cursive;
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 2.5rem;
+#h1 {
+  font-family: cursive;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.5rem;
 }
 
 .gallery-item img {
@@ -36,7 +36,7 @@
   justify-content: center;
   padding: 2rem;
   border: 0.35rem outset black;
-  outline: 0.2rem solid #7F7F7F;
+  outline: 0.2rem solid #7f7f7f;
   margin: 4rem;
   outline-offset: 0.5rem;
   box-shadow: 0.2rem 0rem 1rem 0.4rem #8d811f;
@@ -46,6 +46,7 @@
   width: 80vw;
   height: 80vh;
   object-fit: cover;
+  image-resolution: from-image;
 }
 .image-description {
   display: none;
@@ -56,47 +57,41 @@
   font-size: 3rem;
   float: right;
   font-family: cursive;
-
 }
-.label1{
-    box-shadow: 0px 0px 3px black;
-    line-height: 2;
-    padding: 4px 9px;
-    border: 2px solid black;
-    margin-right: 50px;
-    margin-left: 50px;
-    font-size: 1rem;
-    background: white;
-    
-
-
+.label1 {
+  box-shadow: 0px 0px 3px black;
+  line-height: 2;
+  padding: 4px 9px;
+  border: 2px solid black;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 1rem;
+  background: white;
 }
-.label1:active{
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-    inset 2px 2px 3px rgba(0, 0, 0, .6);
-
+.label1:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 #del {
   box-shadow: 0px 0px 0px black;
-    line-height: 2;
-    padding: 0 15px;
-    font-size: 1rem;
-    background: white;
-    border: 2px solid black;
-    margin-left: 50px;
-
+  line-height: 2;
+  padding: 0 15px;
+  font-size: 1rem;
+  background: white;
+  border: 2px solid black;
+  margin-left: 50px;
 }
-#del:active{
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-    inset 2px 2px 3px rgba(0, 0, 0, .6);
-
+#del:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-#button{
-    /* background-image:url(./facebook-love-icon-11549682031zkpiupatd5.png); */
-    line-height: 2;
-    padding: 13px 13px;
-    cursor: pointer;
-    border-radius: 50%;
-
+#button {
+  line-height: 2;
+  padding: 13px 13px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#button :hover{
+background-color:red;
 }

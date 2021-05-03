@@ -47,7 +47,7 @@ $(document).ready(function () {
     );
     $('#button').click(function(){
         console.log("heba")
-      $('#button').css("background-image","red")
+      $('#button').css("hover","red")
     })
   }
 
