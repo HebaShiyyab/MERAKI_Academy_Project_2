@@ -31,22 +31,7 @@ $(document).ready(function () {
     "Aurora Great interference of ions through the magnetic field",
     "Astronaut To give love always    ",
   ];
-  const galleryArrayLink = [
-    "sun_large",
-    "UranusLarge",
-    "fullMoonLarg",
-    "galaxsiLarge",
-    "mercuryLarge",
-    "Meteor showeLarg",
-    "nebulaLarg",
-    "PleiadesLarge",
-    "solar eclipseLarg",
-    "n3large",
-    "butterflyLarg",
-    "saturnLarg",
-    "auroraLarg",
-    "astronauteLarg",
-  ];
+
   const gallery = $(".gallery");
   for (let i = 0; i < galleryArray.length; i++) {
     gallery.append(
@@ -61,14 +46,18 @@ $(document).ready(function () {
     </div>`
     );
   }
+  
+  $(".gallery-item").button({
+      icon:"bi bi-emoji-angry"
+   
+  });
+
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
   });
-  const dynamic = $("#dynamic");
-  const sub = $("#sub");
-  $("#dynamic").click(function () {
-    //can me remove type of click?
-  });
+  //   const dynamic = $("#dynamic");
+  //   const sub = $("#sub");
+  $("#dynamic").click(function () {});
   $("#sub").click(function () {
     const dynamic = $("#dynamic");
     const file1 = $("#dynamic").val();
