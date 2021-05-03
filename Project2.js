@@ -46,11 +46,8 @@ $(document).ready(function () {
     </div>`
     );
   }
-  
-  $(".gallery-item").button({
-      icon:"bi bi-emoji-angry"
-   
-  });
+  $(".gallery-item").addClass("icon-bar")
+  $(".icon-bar").append(`<i class="bi bi-emoji-smile"></i>`,);
 
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
