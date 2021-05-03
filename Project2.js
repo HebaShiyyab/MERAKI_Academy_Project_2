@@ -46,8 +46,14 @@ $(document).ready(function () {
     </div>`
     );
   }
-  $(".gallery-item").addClass("icon-bar")
-  $(".icon-bar").append(`<i class="bi bi-emoji-heart-eyes"></i>`,`<i class="bi bi-emoji-angry">`);
+//   const ui_icon = ["ui-icon-heart", "ui-icon-closethick"];
+  $(".gallery-item").addClass(".icon-bar");
+  $(".icon-bar").button({
+      icons:{
+          primary:`ui-icon-heart`
+      },Text:false,
+  })
+    
 
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
