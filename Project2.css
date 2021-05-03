@@ -89,13 +89,14 @@
 }
 
 .but1 {
+  background-image: url("love.png");
   line-height: 2;
   padding: 13px 13px;
   cursor: pointer;
   border-radius: 50%;
 }
 .but1:hover {
-  background-image: url(./love.png);
+  background-color:rgb(187, 5, 5);
 }
 @media (height > 500px) {
   height: 50vh;
