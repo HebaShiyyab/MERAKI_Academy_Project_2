@@ -1,19 +1,19 @@
 $(document).ready(function () {
   const galleryArray = [
-    "sunSmall",
-    "uranusSmall",
-    "fullMoonSmall",
-    "galaxsiSmall",
-    "mercurySmall",
-    "Meteor showeSmall",
-    "nebulaSmall",
-    "PleiadesSmall",
-    "solar eclipseSmall",
-    "n3",
-    "butterflySmall",
-    "saturnSmall",
-    "auroraSmall",
-    "astronauteSmalljpg",
+    "sun_large",
+    "uranusLarge",
+    "fullMoonLarg",
+    "galaxsiLarge",
+    "mercuryLarge",
+    "Meteor showeLarg",
+    "nebulaLarg",
+    "PleiadesLarge",
+    "solar eclipseLarg",
+    "n3large",
+    "butterflyLarg",
+    "saturnLarg",
+    "auroraLarg"
+ 
   ];
   const descriptionArray = [
     "The sun is the great star in the solar system",
@@ -29,7 +29,7 @@ $(document).ready(function () {
     "Butter fly Nebula",
     "Saturn is a planet from the solar system",
     "Aurora Great interference of ions through the magnetic field",
-    "Astronaut To give love always    ",
+   
   ];
 
   const gallery = $(".gallery");
@@ -41,19 +41,17 @@ $(document).ready(function () {
         `.jpg" alt="" > 
     <div class="image-description">` +
         descriptionArray[i] +
-        `</div>
+        `</div><div><button style='background-image: url("https://toppng.com/uploads/preview/facebook-love-icon-11549682031zkpiupatd5.png")' id="button"></button> </div>
 
     </div>`
     );
+    $('#button').click(function(){
+        console.log("heba")
+      $('#button').css("background-image","red")
+    })
   }
-//   const ui_icon = ["ui-icon-heart", "ui-icon-closethick"];
-  $(".gallery-item").addClass(".icon-bar");
-  $(".icon-bar").button({
-      icons:{
-          primary:`ui-icon-heart`
-      },Text:false,
-  })
-    
+
+
 
   $(".gallery-item").click(function () {
     $(this).toggleClass("full-screen");
@@ -62,7 +60,7 @@ $(document).ready(function () {
   //   const sub = $("#sub");
   $("#dynamic").click(function () {});
   $("#sub").click(function () {
-    const dynamic = $("#dynamic");
+    // const dynamic = $("#dynamic");
     const file1 = $("#dynamic").val();
     //if the you choose file alert the word
     if (file1) {

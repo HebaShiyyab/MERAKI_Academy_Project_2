@@ -12,7 +12,7 @@
   cursor: pointer;
   border-radius: 0.2rem;
   border: 2px solid #c3a920;
-
+  margin: -2rem;
 }
 
 .gallery-item {
@@ -89,5 +89,14 @@
 #del:active{
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
     inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+}
+
+#button{
+    /* background-image:url(./facebook-love-icon-11549682031zkpiupatd5.png); */
+    line-height: 2;
+    padding: 13px 13px;
+    cursor: pointer;
+    border-radius: 50%;
 
 }
